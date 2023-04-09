@@ -1,0 +1,39 @@
+Assignment 1:
+
+1.My home directory is “/home/dejianh”. I typed “echo $HOME” to see my $HOME
+environment variable which stores the path to home directory.  
+
+2.My UID is 61564. I used the command “id -u” to print my UID.  
+
+3.My group is ugrad . I used command “groups” to print the group.  
+
+4.My "kill" character is ^U, it is used for erase the current line.  I find it
+by using "stty -a" command.  
+
+5.For remote hosted file system,I used uci odin machine. After I removed execute
+permission for directory,I am not allowed to create files. I can't cd into it. I
+can't ls it. I can't "ls -l" it.  I don't have a Linux system or virtual
+mahcine,so I used WSL. After I removed the execution permission,I can't create
+file in it. I can't "cd" into it. I can't "ls" it.I can't 'ls -l" it.  
+
+6.Creating a hard link and removing the original file won't remove the actual
+content since the hard link is still connecting to the actual file in disk. Hard
+link is just important as the original link,so only the inode of original file
+will be deleted not the content of file in disk.  Deleting the symbolic file
+will not delete the actual content because a symbolic link is just a refernce to
+another file, so only reference will be removed rather than the content.
+
+7."mv" a directory is possible, I successfully moved a directory to another
+directory using command "mv <source> <destination>. "cp" a directory is not
+allowed, unless "-r" option is specified.
+
+8.There are 71 mounted file system on odin.ics.uci.edu. I used command "mount |
+wc -l" to check how many lines are in the mount result. There are 71 lines and
+each line correspond to a mounted file system.
+
+9.I used command "ls -l /dev/pts | grep dejianh" to get all the tty I used. I
+find the anme of my log in terminal is "pts/5".   
+
+
+10.FFDC to binary should be 11111111 11011100. MOVE is 1100101. 
+MUL is 1010001 01011101.
